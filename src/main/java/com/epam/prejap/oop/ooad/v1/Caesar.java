@@ -15,23 +15,10 @@ class Caesar {
             System.out.println("Would you like to encrypt or decrypt a message?");
             input = in.nextLine();
             if (input.equals("encrypt")) {
-                System.out.println("Enter a message to encrypt: ");
-                input = in.nextLine();
-                output = "";
-                for (int i = 0; i < input.length(); i++) {
-                    char letter = input.charAt(i);
-                    if ('A' <= letter && letter <= 'Z') {
-                        if (letter + 3 <= 'Z') {
-                            output = output + (char)(letter + 3);
-                        } else {
-                            output = output + (char)(letter + 3 - 26);
-                        }
-                    } else {
-                        output = output + letter;
-                    }
-                }
-                System.out.println("Encrypted message: ");
-                System.out.println(output);
+                input = askForPlainTextMessage(in);
+                output = encryptMessage(input);
+                // output the encrypted message
+                outputEncryptedMessage(output);
                 break;
             } else if (input.equals("decrypt")) {
                 System.out.println("Enter a message to decrypt: ");
@@ -41,9 +28,9 @@ class Caesar {
                     char letter = input.charAt(i);
                     if ('A' <= letter && letter <= 'Z') {
                         if (letter - 3 >= 'A') {
-                            output = output + (char)(letter - 3);
+                            output = output + (char) (letter - 3);
                         } else {
-                            output = output + (char)(letter - 3 + 26);
+                            output = output + (char) (letter - 3 + 26);
                         }
                     } else {
                         output = output + letter;
@@ -57,5 +44,45 @@ class Caesar {
             }
         } while (true);
         System.out.println("Vale!");
+    }
+
+    private static void outputEncryptedMessage(String output) {
+        System.out.println("Encrypted message: ");
+        System.out.println(output);
+    }
+
+    private static String encryptMessage(String input) {
+        String output;
+        output = "";
+        for (int i = 0; i < input.length(); i++) {
+            char letter = input.charAt(i);
+            // encrypts a single character
+            char character;
+            character = encryptSingleCharacter(letter);
+            output += character;
+        }
+        return output;
+    }
+
+    private static char encryptSingleCharacter(char letter) {
+        char character;
+        if ('A' <= letter && letter <= 'Z') {
+            // shift by 3
+            if (letter + 3 <= 'Z') {
+                character = (char) (letter + 3);
+            } else {
+                character = (char) (letter + 3 - 26);
+            }
+        } else {
+           character = letter;
+        }
+        return character;
+    }
+
+    private static String askForPlainTextMessage(Scanner in) {
+        String input;
+        System.out.println("Enter a message to encrypt: ");
+        input = in.nextLine();
+        return input;
     }
 }
