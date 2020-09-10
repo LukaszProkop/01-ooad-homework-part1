@@ -37,7 +37,8 @@ class Caesar {
             if (!(input.equals("encrypt") || input.equals("decrypt"))) {
                 out.println("Tertium non datur!");
                 again = true;
-            }
+            } else
+                again = false;
         } while (again);
         return input;
     }

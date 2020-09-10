@@ -22,9 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9c68552-6987-4402-b642-1cb011c116e3" name="Default Changelist" comment="Refactor from lecture">
+    <list default="true" id="e9c68552-6987-4402-b642-1cb011c116e3" name="Default Changelist" comment="Refactor decrypting part (homework)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/prejap/oop/ooad/v1/Caesar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/prejap/oop/ooad/v1/Caesar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/prejap/oop/ooad/v4/Caesar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/prejap/oop/ooad/v4/Caesar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/prejap/oop/ooad/v5/Caesar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/prejap/oop/ooad/v5/Caesar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/prejap/oop/ooad/v6/Caesar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/prejap/oop/ooad/v6/Caesar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +56,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Caesar (1)">
+    <configuration name="Caesar (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epam.prejap.oop.ooad.v4.Caesar" />
+      <module name="ooad-live" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epam.prejap.oop.ooad.v4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Caesar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.epam.prejap.oop.ooad.v1.Caesar" />
       <module name="ooad-live" />
@@ -70,6 +85,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Caesar (1)" />
         <item itemvalue="Application.Caesar" />
       </list>
     </recent_temporary>
@@ -85,7 +101,8 @@
       <workItem from="1599744154846" duration="285000" />
       <workItem from="1599744479322" duration="54000" />
       <workItem from="1599744577575" duration="16000" />
-      <workItem from="1599752082364" duration="4892000" />
+      <workItem from="1599752082364" duration="5934000" />
+      <workItem from="1599762281448" duration="2641000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1599744254564</created>
@@ -101,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599755597630</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refactor decrypting part (homework)">
+      <created>1599757226648</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599757226648</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,29 +146,30 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
     <MESSAGE value="Refactor from lecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor from lecture" />
+    <MESSAGE value="Refactor decrypting part (homework)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor decrypting part (homework)" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1874" height="253" key="GridCell.Tab.0.bottom" timestamp="1599756214754">
+    <state width="1874" height="253" key="GridCell.Tab.0.bottom" timestamp="1599764673287">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1874" height="253" key="GridCell.Tab.0.bottom/0.27.1920.985/1920.0.1920.1080@0.27.1920.985" timestamp="1599756214754" />
-    <state width="1874" height="253" key="GridCell.Tab.0.center" timestamp="1599756214754">
+    <state width="1874" height="253" key="GridCell.Tab.0.bottom/0.27.1920.985/1920.0.1920.1080@0.27.1920.985" timestamp="1599764673287" />
+    <state width="1874" height="253" key="GridCell.Tab.0.center" timestamp="1599764673287">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1874" height="253" key="GridCell.Tab.0.center/0.27.1920.985/1920.0.1920.1080@0.27.1920.985" timestamp="1599756214754" />
-    <state width="1874" height="253" key="GridCell.Tab.0.left" timestamp="1599756214754">
+    <state width="1874" height="253" key="GridCell.Tab.0.center/0.27.1920.985/1920.0.1920.1080@0.27.1920.985" timestamp="1599764673287" />
+    <state width="1874" height="253" key="GridCell.Tab.0.left" timestamp="1599764673287">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1874" height="253" key="GridCell.Tab.0.left/0.27.1920.985/1920.0.1920.1080@0.27.1920.985" timestamp="1599756214754" />
-    <state width="1874" height="253" key="GridCell.Tab.0.right" timestamp="1599756214754">
+    <state width="1874" height="253" key="GridCell.Tab.0.left/0.27.1920.985/1920.0.1920.1080@0.27.1920.985" timestamp="1599764673287" />
+    <state width="1874" height="253" key="GridCell.Tab.0.right" timestamp="1599764673287">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1874" height="253" key="GridCell.Tab.0.right/0.27.1920.985/1920.0.1920.1080@0.27.1920.985" timestamp="1599756214754" />
-    <state x="555" y="255" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599755600364">
+    <state width="1874" height="253" key="GridCell.Tab.0.right/0.27.1920.985/1920.0.1920.1080@0.27.1920.985" timestamp="1599764673287" />
+    <state x="555" y="255" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599757234781">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="555" y="255" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.985/1920.0.1920.1080@0.27.1920.985" timestamp="1599755600364" />
+    <state x="555" y="255" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.985/1920.0.1920.1080@0.27.1920.985" timestamp="1599757234781" />
     <state x="1007" y="307" width="568" height="508" key="extract.method.dialog" timestamp="1599756987645">
       <screen x="0" y="27" width="1920" height="985" />
     </state>

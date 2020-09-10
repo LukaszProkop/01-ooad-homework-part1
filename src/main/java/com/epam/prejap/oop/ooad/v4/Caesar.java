@@ -22,13 +22,16 @@ class Caesar {
     private static String readAction(Scanner in) {
         String input;
         boolean again = false;
+        System.out.println(again);
         do {
             System.out.println("Would you like to encrypt or decrypt a message?");
             input = in.nextLine();
             if (!(input.equals("encrypt") || input.equals("decrypt"))) {
                 System.out.println("Tertium non datur!");
                 again = true;
-            }
+            } else
+                again = false;
+            System.out.println(again);
         } while (again);
         return input;
     }
